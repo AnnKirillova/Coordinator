@@ -48,4 +48,8 @@ class ChooseColorViewController: UIViewController, Storyboarded {
     @IBAction func purpleAction(_ sender: UIButton) {
         coordinator?.colorSubscription(with: .purple)
     }
+    
+    @IBAction func randomAction(_ sender: UIButton) {
+        coordinator?.colorSubscription(with: nil)
+    }
 }

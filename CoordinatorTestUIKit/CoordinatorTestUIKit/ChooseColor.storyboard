@@ -16,8 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="So, you can choose color, which you want see🌈 Please, press button🙃" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mKf-iF-ifS">
-                                <rect key="frame" x="87.666666666666686" y="144" width="200" height="61"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="So, you can choose color, which you want see🌈 Please, press button🙃 Or press unicorn🦄" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mKf-iF-ifS">
+                                <rect key="frame" x="87.666666666666686" y="144" width="200" height="81.333333333333314"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="aWt-Tn-U92"/>
                                 </constraints>
@@ -26,7 +26,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Swl-wy-TJY">
-                                <rect key="frame" x="100" y="255" width="30" height="30"/>
+                                <rect key="frame" x="100" y="275.33333333333331" width="30" height="30"/>
                                 <state key="normal" title="Red">
                                     <color key="titleColor" systemColor="systemRedColor"/>
                                 </state>
@@ -35,7 +35,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AN8-CW-exW">
-                                <rect key="frame" x="100" y="305" width="51" height="30"/>
+                                <rect key="frame" x="100" y="325.33333333333331" width="51" height="30"/>
                                 <state key="normal" title="Orange">
                                     <color key="titleColor" systemColor="systemOrangeColor"/>
                                 </state>
@@ -44,7 +44,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I2C-fa-ziU">
-                                <rect key="frame" x="100" y="355" width="44" height="30"/>
+                                <rect key="frame" x="100" y="375.33333333333331" width="44" height="30"/>
                                 <state key="normal" title="Yellow">
                                     <color key="titleColor" systemColor="systemYellowColor"/>
                                 </state>
@@ -53,7 +53,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6eu-4S-mc5">
-                                <rect key="frame" x="100" y="405" width="42" height="30"/>
+                                <rect key="frame" x="100" y="425.33333333333331" width="42" height="30"/>
                                 <state key="normal" title="Green">
                                     <color key="titleColor" systemColor="systemGreenColor"/>
                                 </state>
@@ -62,7 +62,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l43-40-lje">
-                                <rect key="frame" x="100" y="455" width="31" height="30"/>
+                                <rect key="frame" x="100" y="475.33333333333331" width="31" height="30"/>
                                 <state key="normal" title="Blue">
                                     <color key="titleColor" red="0.26174032689999999" green="0.6629649997" blue="0.91177362200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -71,7 +71,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sRJ-sV-qfg">
-                                <rect key="frame" x="100" y="505" width="66" height="30"/>
+                                <rect key="frame" x="100" y="525.33333333333337" width="66" height="30"/>
                                 <state key="normal" title="Dark blue">
                                     <color key="titleColor" red="0.0" green="0.01531650258" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -80,7 +80,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6RP-Vb-0YF">
-                                <rect key="frame" x="100" y="555" width="45" height="30"/>
+                                <rect key="frame" x="100" y="575.33333333333337" width="45" height="30"/>
                                 <state key="normal" title="Purple">
                                     <color key="titleColor" red="1" green="0.01531650258" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -102,13 +102,6 @@
                                     <constraint firstAttribute="height" constant="61" id="YtI-0q-Xy8"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="unicorn" translatesAutoresizingMaskIntoConstraints="NO" id="wra-Py-yYI">
-                                <rect key="frame" x="225" y="333" width="150" height="141"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="141" id="dif-jF-g7O"/>
-                                    <constraint firstAttribute="width" constant="150" id="w85-go-Xxq"/>
-                                </constraints>
-                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rainbow" translatesAutoresizingMaskIntoConstraints="NO" id="0H4-Qd-Bzy">
                                 <rect key="frame" x="0.0" y="617" width="173" height="111"/>
                                 <constraints>
@@ -116,11 +109,22 @@
                                     <constraint firstAttribute="width" constant="173" id="dA0-yR-CoF"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bRv-9l-s1G">
+                                <rect key="frame" x="184" y="360.33333333333331" width="224.66666666666663" height="145"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="145" id="j3b-0C-uhg"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="unicorn"/>
+                                <connections>
+                                    <action selector="randomAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="gT6-cw-UDJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="wra-Py-yYI" firstAttribute="top" secondItem="mKf-iF-ifS" secondAttribute="bottom" constant="128" id="5S0-tc-hVB"/>
+                            <constraint firstItem="bRv-9l-s1G" firstAttribute="top" secondItem="mKf-iF-ifS" secondAttribute="bottom" constant="135" id="0uC-9a-APu"/>
+                            <constraint firstItem="bRv-9l-s1G" firstAttribute="leading" secondItem="I2C-fa-ziU" secondAttribute="trailing" constant="40" id="1nG-kM-CyH"/>
                             <constraint firstItem="6RP-Vb-0YF" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="100" id="5Sv-wH-4Hs"/>
                             <constraint firstItem="mKf-iF-ifS" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="7cS-wz-3kc"/>
                             <constraint firstItem="Swl-wy-TJY" firstAttribute="top" secondItem="mKf-iF-ifS" secondAttribute="bottom" constant="50" id="8n5-tu-DyK"/>
@@ -135,7 +139,6 @@
                             <constraint firstItem="Swl-wy-TJY" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="100" id="OPP-Iu-6JC"/>
                             <constraint firstItem="AN8-CW-exW" firstAttribute="top" secondItem="Swl-wy-TJY" secondAttribute="bottom" constant="20" id="Qli-VO-CGi"/>
                             <constraint firstItem="I2C-fa-ziU" firstAttribute="top" secondItem="AN8-CW-exW" secondAttribute="bottom" constant="20" id="SWI-Ci-Bxe"/>
-                            <constraint firstItem="wra-Py-yYI" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="Y2z-yi-1o0"/>
                             <constraint firstItem="6eu-4S-mc5" firstAttribute="top" secondItem="I2C-fa-ziU" secondAttribute="bottom" constant="20" id="Zcg-Lf-M6v"/>
                             <constraint firstItem="mKf-iF-ifS" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="100" id="b3f-7h-Njn"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="0H4-Qd-Bzy" secondAttribute="bottom" constant="50" id="cIz-ft-dDf"/>
@@ -149,7 +152,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="111.59420289855073" y="93.75"/>
+            <point key="canvasLocation" x="111.2" y="93.103448275862078"/>
         </scene>
     </scenes>
     <resources>

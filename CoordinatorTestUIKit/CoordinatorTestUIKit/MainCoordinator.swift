@@ -18,7 +18,7 @@ class MainCoordinator: Coordinator{
         navigationController.pushViewController(vc, animated: false)
     }
     
-    func colorSubscription(with color: UIColor) {
+    func colorSubscription(with color: UIColor?) {
         let vc = ColorViewController.instantiate()
         vc.coordinator = self
         vc.color = color
