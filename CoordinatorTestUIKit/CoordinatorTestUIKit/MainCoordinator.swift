@@ -13,21 +13,29 @@ class MainCoordinator: Coordinator{
     var navigationController = UINavigationController()
     
     func start() {
-        let vc = ViewController.instantiate()
-        vc.coordinator = self
+        let vc = MainViewController.instantiate()
+        vc.delegate = self
         navigationController.pushViewController(vc, animated: false)
     }
     
-    func colorSubscription(with color: UIColor){
-        let vc = ColorController.instantiate()
+    func colorSubscription(with color: UIColor) {
+        let vc = ColorViewController.instantiate()
         vc.coordinator = self
         vc.color = color
         navigationController.pushViewController(vc, animated: true)
     }
     
-    func chooseColor(){
-        let vc = ChooseColorController.instantiate()
+    func chooseColor() {
+        // let chooseColor = ChooseColorCoordinator()
+        // chooseColor.start()
+        let vc = ChooseColorViewController.instantiate()
         vc.coordinator = self
         navigationController.pushViewController(vc, animated: true)
+    }
+}
+
+extension MainCoordinator: MainViewControllerDelegate {
+    func mainViewControllerWillShowChooseColor(_ sender: MainViewController) {
+        chooseColor()
     }
 }

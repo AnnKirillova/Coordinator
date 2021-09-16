@@ -1,23 +1,25 @@
 //
-//  ChooseColorController.swift
+//  ChooseColorViewController.swift
 //  CoordinatorTestUIKit
 //
 //  Created by Ann on 15.09.2021.
 //
 
 import UIKit
-class ChooseColorController: UIViewController, Storyboarded {
+
+enum Colors: Int {
+    case red
+    case orange
+    case yellow
+    case green
+    case blue
+    case dark
+    case purple
+}
+
+class ChooseColorViewController: UIViewController, Storyboarded {
     
-    weak var coordinator: MainCoordinator?
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-    
-    static func instantiate() -> Self {
-        let story = UIStoryboard(name: "ChooseColorStoryboard", bundle: Bundle.main)
-        return story.instantiateInitialViewController()!
-    }
+    var coordinator: MainCoordinator?
     
     @IBAction func redAction(_ sender: UIButton) {
         coordinator?.colorSubscription(with: .red)
