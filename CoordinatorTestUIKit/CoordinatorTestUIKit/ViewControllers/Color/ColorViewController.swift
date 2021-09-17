@@ -25,6 +25,7 @@ class ColorViewController: UIViewController, Storyboarded {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Your color is..."
     }
     override func viewWillAppear(_ animated: Bool) {
             super.viewWillAppear(animated)

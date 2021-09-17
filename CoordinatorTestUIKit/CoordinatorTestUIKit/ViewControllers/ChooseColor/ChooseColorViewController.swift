@@ -22,6 +22,11 @@ class ChooseColorViewController: UIViewController, Storyboarded {
     var coordinator: MainCoordinator?
     let viewModel = ChooseColorViewModule()
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.title = "❤️🧡💛💚💙💜"
+    }
+    
     @IBAction func getColorAction(_ sender: UIButton) {
        let color = viewModel.getColor(by: sender.tag)
         coordinator?.colorSubscription(with: color)

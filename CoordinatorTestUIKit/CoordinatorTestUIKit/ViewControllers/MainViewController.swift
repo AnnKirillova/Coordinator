@@ -15,6 +15,16 @@ class MainViewController: UIViewController, Storyboarded {
     
     weak var delegate: MainViewControllerDelegate?
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: animated)
+    }
+    
     @IBAction func nextPageActionButton(_ sender: UIButton) {
         delegate?.mainViewControllerWillShowChooseColor(self)
     }

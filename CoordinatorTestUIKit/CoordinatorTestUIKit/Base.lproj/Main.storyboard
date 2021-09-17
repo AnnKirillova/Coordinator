@@ -43,6 +43,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="5co-0R-a2c"/>
+                    <nil key="simulatedTopBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
