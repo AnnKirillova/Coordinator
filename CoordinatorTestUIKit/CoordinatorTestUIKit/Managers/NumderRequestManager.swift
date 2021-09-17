@@ -12,7 +12,7 @@ import UIKit
 class NumberRequestManager{
     
     func getNumbers(with completion: @escaping (_ result: Result<[CGFloat], Error>) -> ()){
-        let url = URL(string: "http://www.randomnumberapi.com/api/v1.0/random?min=0&max=255&count=3") as! URL
+        guard let url = URL(string: "http://www.randomnumberapi.com/api/v1.0/random?min=0&max=255&count=3") else {return}
         let request = URLRequest(url: url)
         URLSession.shared.dataTask(with: request) { data, response, error in
             if let error = error {

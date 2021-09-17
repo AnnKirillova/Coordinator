@@ -21,6 +21,8 @@
 		95674F2A26F241C70014D1D5 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95674F2926F241C70014D1D5 /* Storyboarded.swift */; };
 		95674F2C26F2445C0014D1D5 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95674F2B26F2445C0014D1D5 /* MainCoordinator.swift */; };
 		95D0C53026F38BBF002F563D /* NumderRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D0C52F26F38BBF002F563D /* NumderRequestManager.swift */; };
+		95D0C53726F491E3002F563D /* ChooseColorViewModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D0C53626F491E3002F563D /* ChooseColorViewModule.swift */; };
+		95D0C53C26F4951E002F563D /* ColorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D0C53B26F4951E002F563D /* ColorViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		95674F2926F241C70014D1D5 /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
 		95674F2B26F2445C0014D1D5 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		95D0C52F26F38BBF002F563D /* NumderRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumderRequestManager.swift; sourceTree = "<group>"; };
+		95D0C53626F491E3002F563D /* ChooseColorViewModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseColorViewModule.swift; sourceTree = "<group>"; };
+		95D0C53B26F4951E002F563D /* ColorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,11 +86,10 @@
 		95674F0526F2290C0014D1D5 /* CoordinatorTestUIKit */ = {
 			isa = PBXGroup;
 			children = (
-				95674F2926F241C70014D1D5 /* Storyboarded.swift */,
-				95674F2026F23C1D0014D1D5 /* Controllers */,
-				95674F1A26F229440014D1D5 /* Coordinator.swift */,
-				95674F2B26F2445C0014D1D5 /* MainCoordinator.swift */,
-				95D0C52F26F38BBF002F563D /* NumderRequestManager.swift */,
+				95D0C53426F48B9B002F563D /* Coordinator */,
+				95D0C53226F48A9E002F563D /* Managers */,
+				95D0C53326F48AB1002F563D /* UIKitExtensions */,
+				95674F2026F23C1D0014D1D5 /* ViewControllers */,
 				95674F2326F23D0A0014D1D5 /* Color.storyboard */,
 				95674F2126F23CF70014D1D5 /* ChooseColor.storyboard */,
 				95674F0C26F2290C0014D1D5 /* Main.storyboard */,
@@ -97,14 +100,57 @@
 			path = CoordinatorTestUIKit;
 			sourceTree = "<group>";
 		};
-		95674F2026F23C1D0014D1D5 /* Controllers */ = {
+		95674F2026F23C1D0014D1D5 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				95D0C53A26F4950D002F563D /* Color */,
+				95D0C53926F494EF002F563D /* ChooseColor */,
 				95674F0A26F2290C0014D1D5 /* MainViewController.swift */,
-				95674F2526F23D370014D1D5 /* ChooseColorViewController.swift */,
-				95674F2726F23D440014D1D5 /* ColorViewController.swift */,
 			);
-			path = Controllers;
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		95D0C53226F48A9E002F563D /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				95D0C52F26F38BBF002F563D /* NumderRequestManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		95D0C53326F48AB1002F563D /* UIKitExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				95674F2926F241C70014D1D5 /* Storyboarded.swift */,
+			);
+			path = UIKitExtensions;
+			sourceTree = "<group>";
+		};
+		95D0C53426F48B9B002F563D /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				95674F1A26F229440014D1D5 /* Coordinator.swift */,
+				95674F2B26F2445C0014D1D5 /* MainCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		95D0C53926F494EF002F563D /* ChooseColor */ = {
+			isa = PBXGroup;
+			children = (
+				95D0C53626F491E3002F563D /* ChooseColorViewModule.swift */,
+				95674F2526F23D370014D1D5 /* ChooseColorViewController.swift */,
+			);
+			path = ChooseColor;
+			sourceTree = "<group>";
+		};
+		95D0C53A26F4950D002F563D /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				95674F2726F23D440014D1D5 /* ColorViewController.swift */,
+				95D0C53B26F4951E002F563D /* ColorViewModel.swift */,
+			);
+			path = Color;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,9 +230,11 @@
 				95674F2826F23D440014D1D5 /* ColorViewController.swift in Sources */,
 				95D0C53026F38BBF002F563D /* NumderRequestManager.swift in Sources */,
 				95674F1B26F229440014D1D5 /* Coordinator.swift in Sources */,
+				95D0C53726F491E3002F563D /* ChooseColorViewModule.swift in Sources */,
 				95674F0B26F2290C0014D1D5 /* MainViewController.swift in Sources */,
 				95674F0726F2290C0014D1D5 /* AppDelegate.swift in Sources */,
 				95674F0926F2290C0014D1D5 /* SceneDelegate.swift in Sources */,
+				95D0C53C26F4951E002F563D /* ColorViewModel.swift in Sources */,
 				95674F2A26F241C70014D1D5 /* Storyboarded.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

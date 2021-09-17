@@ -11,13 +11,14 @@ class ColorViewController: UIViewController, Storyboarded {
     @IBOutlet weak var spinnerView: UIActivityIndicatorView!
     
     var coordinator: MainCoordinator?
-    lazy var colorManager = NumberRequestManager()
+    lazy var viewModel = ColorViewModel(with: self)
     
     var color: UIColor? {
         didSet {
             guard color != nil else {return}
             DispatchQueue.main.async {
                 self.view.backgroundColor = self.color
+                self.spinnerView.isHidden = true
             }
         }
     }
@@ -28,28 +29,9 @@ class ColorViewController: UIViewController, Storyboarded {
     override func viewWillAppear(_ animated: Bool) {
             super.viewWillAppear(animated)
             if color == nil {
-                getRandomCollor()
+                spinnerView.isHidden = false
+                viewModel.getRandomCollor()
             }
-    }
-    
-    func getRandomCollor(){
-        spinnerView.isHidden = false
-        colorManager.getNumbers {[weak self] result in
-            guard let self = self else {return}
-            switch result{
-            case .failure(let error):
-                self.showError(with: error.localizedDescription)
-            case .success(let color):
-                if color.count >= 3{
-                    self.color = UIColor(red: color[0]/255.0, green: color[1]/255.0, blue: color[2]/255.0, alpha: 1)
-                } else {
-                    self.showError(with: "Bad response")
-                }
-            }
-            DispatchQueue.main.async {
-                self.spinnerView.isHidden = true
-            }
-        }
     }
     
     func showError(with message: String){

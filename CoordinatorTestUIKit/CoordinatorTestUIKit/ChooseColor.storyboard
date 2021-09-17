@@ -31,61 +31,61 @@
                                     <color key="titleColor" systemColor="systemRedColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="redAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="aQ0-vS-uYg"/>
+                                    <action selector="getColorAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="24E-Tn-5HR"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AN8-CW-exW">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AN8-CW-exW">
                                 <rect key="frame" x="100" y="325.33333333333331" width="51" height="30"/>
                                 <state key="normal" title="Orange">
                                     <color key="titleColor" systemColor="systemOrangeColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="orangeAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="DOs-DU-Fzf"/>
+                                    <action selector="getColorAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="mR8-eI-NAT"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I2C-fa-ziU">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I2C-fa-ziU">
                                 <rect key="frame" x="100" y="375.33333333333331" width="44" height="30"/>
                                 <state key="normal" title="Yellow">
                                     <color key="titleColor" systemColor="systemYellowColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="yellowAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="OD9-1h-4q8"/>
+                                    <action selector="getColorAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="yad-Ye-3VZ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6eu-4S-mc5">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6eu-4S-mc5">
                                 <rect key="frame" x="100" y="425.33333333333331" width="42" height="30"/>
                                 <state key="normal" title="Green">
                                     <color key="titleColor" systemColor="systemGreenColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="greenAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="F3K-yt-Ftp"/>
+                                    <action selector="getColorAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="xDL-Pq-BwQ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l43-40-lje">
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l43-40-lje">
                                 <rect key="frame" x="100" y="475.33333333333331" width="31" height="30"/>
                                 <state key="normal" title="Blue">
                                     <color key="titleColor" red="0.26174032689999999" green="0.6629649997" blue="0.91177362200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="blueAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Gnb-Zr-ysC"/>
+                                    <action selector="getColorAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="caR-N8-Cv7"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sRJ-sV-qfg">
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sRJ-sV-qfg">
                                 <rect key="frame" x="100" y="525.33333333333337" width="66" height="30"/>
                                 <state key="normal" title="Dark blue">
                                     <color key="titleColor" red="0.0" green="0.01531650258" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="darkBlueAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Kfz-NK-3eN"/>
+                                    <action selector="getColorAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="zk7-6k-ySt"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6RP-Vb-0YF">
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6RP-Vb-0YF">
                                 <rect key="frame" x="100" y="575.33333333333337" width="45" height="30"/>
                                 <state key="normal" title="Purple">
                                     <color key="titleColor" red="1" green="0.01531650258" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="purpleAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="o0U-q9-eiH"/>
+                                    <action selector="getColorAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="CzA-EM-17t"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud-computing" translatesAutoresizingMaskIntoConstraints="NO" id="pJZ-Oz-x03">
@@ -109,14 +109,14 @@
                                     <constraint firstAttribute="width" constant="173" id="dA0-yR-CoF"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bRv-9l-s1G">
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bRv-9l-s1G">
                                 <rect key="frame" x="184" y="360.33333333333331" width="224.66666666666663" height="145"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="145" id="j3b-0C-uhg"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="unicorn"/>
                                 <connections>
-                                    <action selector="randomAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="gT6-cw-UDJ"/>
+                                    <action selector="getColorAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Bud-BQ-c0p"/>
                                 </connections>
                             </button>
                         </subviews>
