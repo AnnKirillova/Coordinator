@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Weather View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="WeatherViewController" id="Y6W-OH-hqX" customClass="WeatherViewController" customModule="CoordinatorTestUIKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="london" translatesAutoresizingMaskIntoConstraints="NO" id="oax-KW-Lco">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="358"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="358" id="c7u-eL-aad"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="London" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pCJ-Nl-NsJ">
+                                <rect key="frame" x="40" y="398" width="87" height="23"/>
+                                <fontDescription key="fontDescription" name="HiraMinProN-W6" family="Hiragino Mincho ProN" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temp" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T1w-QS-mfu">
+                                <rect key="frame" x="40" y="461" width="42.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feels like" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zpc-rY-w26">
+                                <rect key="frame" x="40" y="501.5" width="70" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temp min" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Syx-aL-2uX">
+                                <rect key="frame" x="40" y="542.5" width="74.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temp max" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mgU-SS-U2z">
+                                <rect key="frame" x="40" y="583.5" width="79" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pressure" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XLe-Jc-YDW">
+                                <rect key="frame" x="40" y="624.5" width="67" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="XLe-Jc-YDW" firstAttribute="top" secondItem="mgU-SS-U2z" secondAttribute="bottom" constant="20" id="1NH-FM-1Z7"/>
+                            <constraint firstItem="pCJ-Nl-NsJ" firstAttribute="top" secondItem="oax-KW-Lco" secondAttribute="bottom" constant="40" id="8yM-2D-anu"/>
+                            <constraint firstItem="zpc-rY-w26" firstAttribute="top" secondItem="T1w-QS-mfu" secondAttribute="bottom" constant="20" id="9AO-PO-ikS"/>
+                            <constraint firstItem="T1w-QS-mfu" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="40" id="C9o-RX-5Ls"/>
+                            <constraint firstItem="zpc-rY-w26" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="40" id="CEu-TM-7FD"/>
+                            <constraint firstItem="oax-KW-Lco" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="Ggz-7A-0t5"/>
+                            <constraint firstItem="T1w-QS-mfu" firstAttribute="top" secondItem="pCJ-Nl-NsJ" secondAttribute="bottom" constant="40" id="L89-wZ-Hoc"/>
+                            <constraint firstItem="mgU-SS-U2z" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="40" id="Yne-5y-mnM"/>
+                            <constraint firstItem="oax-KW-Lco" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="fF4-AX-cj0"/>
+                            <constraint firstItem="XLe-Jc-YDW" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="40" id="g9T-Rd-Rwh"/>
+                            <constraint firstItem="oax-KW-Lco" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="imn-yg-ce3"/>
+                            <constraint firstItem="mgU-SS-U2z" firstAttribute="top" secondItem="Syx-aL-2uX" secondAttribute="bottom" constant="20" id="jK2-dA-E8j"/>
+                            <constraint firstItem="Syx-aL-2uX" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="40" id="mxU-3i-D5L"/>
+                            <constraint firstItem="pCJ-Nl-NsJ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="40" id="pjb-JE-Zro"/>
+                            <constraint firstItem="Syx-aL-2uX" firstAttribute="top" secondItem="zpc-rY-w26" secondAttribute="bottom" constant="20" id="qNU-aP-NzS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Temp" destination="T1w-QS-mfu" id="hHU-la-gt3"/>
+                        <outlet property="feelsLike" destination="zpc-rY-w26" id="ezC-Xu-f7L"/>
+                        <outlet property="pressure" destination="XLe-Jc-YDW" id="uOm-RH-AGD"/>
+                        <outlet property="tempMax" destination="mgU-SS-U2z" id="nWS-66-fHk"/>
+                        <outlet property="tempMin" destination="Syx-aL-2uX" id="LVY-MV-BgY"/>
+                        <outlet property="weatherImage" destination="oax-KW-Lco" id="byB-cT-6JK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="111.59420289855073" y="93.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="london" width="960" height="540"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

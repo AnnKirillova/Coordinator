@@ -8,26 +8,39 @@
 import Foundation
 import UIKit
 
-class ColorViewModel{
+
+class ColorViewModel {
     weak var colorViewController: ColorViewController?
     lazy var colorManager = NumberRequestManager()
     
-    init (with vc: ColorViewController){
-        self.colorViewController = vc
+    var getColorCallback: ((Result<UIColor, Error>) -> ())?
+    
+    func bind(callback: @escaping (Result<UIColor, Error>) -> () ) {
+        self.getColorCallback = callback
     }
     
     func getRandomCollor(){
-        colorManager.getNumbers {[weak self] result in
+        colorManager.getNumbers { [weak self] result in
             guard let self = self else {return}
             switch result{
             case .failure(let error):
                 self.colorViewController?.showError(with: error.localizedDescription)
-            case .success(let color):
-                if color.count >= 3{
-                    self.colorViewController?.color = UIColor(red: color[0]/255.0, green: color[1]/255.0, blue: color[2]/255.0, alpha: 1)
+                self.getColorCallback?(.failure(error))
+            case .success(let colorNumber):
+                if colorNumber.count >= 3 {
+                    let color = UIColor(
+                        red: colorNumber[0]/255.0,
+                        green: colorNumber[1]/255.0,
+                        blue: colorNumber[2]/255.0,
+                        alpha: 1
+                    )
+                    self.getColorCallback!(.success(color))
                 } else {
                     self.colorViewController?.showError(with: "Bad response")
+                    let badRequestError = AppError.badRequestError
+                    self.getColorCallback?(.failure(badRequestError))
                 }
+                
             }
         }
     }

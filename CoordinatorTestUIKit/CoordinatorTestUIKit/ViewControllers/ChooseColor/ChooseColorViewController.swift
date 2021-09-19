@@ -31,4 +31,8 @@ class ChooseColorViewController: UIViewController, Storyboarded {
        let color = viewModel.getColor(by: sender.tag)
         coordinator?.colorSubscription(with: color)
     }
+    
+    @IBAction func weatherButtonAction(_ sender: UIButton) {
+        coordinator?.weather()
+    }
 }

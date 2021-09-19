@@ -88,13 +88,6 @@
                                     <action selector="getColorAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="CzA-EM-17t"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud-computing" translatesAutoresizingMaskIntoConstraints="NO" id="pJZ-Oz-x03">
-                                <rect key="frame" x="168" y="44" width="187" height="92"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="187" id="h9w-RS-8de"/>
-                                    <constraint firstAttribute="height" constant="92" id="uLW-Ca-oWV"/>
-                                </constraints>
-                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clouds" translatesAutoresizingMaskIntoConstraints="NO" id="cbJ-Kz-xnf">
                                 <rect key="frame" x="-5" y="178" width="104" height="61"/>
                                 <constraints>
@@ -119,6 +112,23 @@
                                     <action selector="getColorAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Bud-BQ-c0p"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ea0-cE-io4">
+                                <rect key="frame" x="251" y="27" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="CkT-qB-t3k"/>
+                                    <constraint firstAttribute="height" constant="100" id="hNm-c3-evh"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="cloud-computing"/>
+                                <connections>
+                                    <action selector="weatherButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="u59-II-wXE"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Press cloud, if you want watch weather" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cRl-wD-3hj">
+                                <rect key="frame" x="5" y="46.666666666666671" width="236" height="60.666666666666671"/>
+                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="24"/>
+                                <color key="textColor" systemColor="systemBlueColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -130,12 +140,14 @@
                             <constraint firstItem="Swl-wy-TJY" firstAttribute="top" secondItem="mKf-iF-ifS" secondAttribute="bottom" constant="50" id="8n5-tu-DyK"/>
                             <constraint firstItem="I2C-fa-ziU" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="100" id="BfV-oM-pmr"/>
                             <constraint firstItem="cbJ-Kz-xnf" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" constant="-5" id="C8F-Kk-rKS"/>
-                            <constraint firstItem="pJZ-Oz-x03" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="GpZ-p6-2do"/>
                             <constraint firstItem="sRJ-sV-qfg" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="100" id="HcL-RF-3JC"/>
+                            <constraint firstItem="ea0-cE-io4" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="-17" id="JL7-RB-nzt"/>
                             <constraint firstItem="AN8-CW-exW" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="100" id="Jvu-Nc-gTc"/>
+                            <constraint firstItem="cRl-wD-3hj" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" constant="5" id="K2y-tR-cn2"/>
                             <constraint firstItem="6RP-Vb-0YF" firstAttribute="top" secondItem="sRJ-sV-qfg" secondAttribute="bottom" constant="20" id="KRf-BN-hXR"/>
                             <constraint firstItem="sRJ-sV-qfg" firstAttribute="top" secondItem="l43-40-lje" secondAttribute="bottom" constant="20" id="Lat-na-a8x"/>
                             <constraint firstItem="6eu-4S-mc5" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="100" id="MN4-Ei-RZ4"/>
+                            <constraint firstItem="cRl-wD-3hj" firstAttribute="centerY" secondItem="ea0-cE-io4" secondAttribute="centerY" id="NeW-k1-vN4"/>
                             <constraint firstItem="Swl-wy-TJY" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="100" id="OPP-Iu-6JC"/>
                             <constraint firstItem="AN8-CW-exW" firstAttribute="top" secondItem="Swl-wy-TJY" secondAttribute="bottom" constant="20" id="Qli-VO-CGi"/>
                             <constraint firstItem="I2C-fa-ziU" firstAttribute="top" secondItem="AN8-CW-exW" secondAttribute="bottom" constant="20" id="SWI-Ci-Bxe"/>
@@ -144,9 +156,10 @@
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="0H4-Qd-Bzy" secondAttribute="bottom" constant="50" id="cIz-ft-dDf"/>
                             <constraint firstItem="l43-40-lje" firstAttribute="top" secondItem="6eu-4S-mc5" secondAttribute="bottom" constant="20" id="gNL-Cc-rsY"/>
                             <constraint firstItem="0H4-Qd-Bzy" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="hFI-GN-aJQ"/>
+                            <constraint firstItem="ea0-cE-io4" firstAttribute="leading" secondItem="cRl-wD-3hj" secondAttribute="trailing" constant="10" id="hLa-8W-w40"/>
                             <constraint firstItem="l43-40-lje" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="100" id="lWA-Xp-jsr"/>
                             <constraint firstItem="cbJ-Kz-xnf" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="134" id="qla-au-5kn"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="pJZ-Oz-x03" secondAttribute="trailing" constant="20" id="zhk-bE-Lle"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ea0-cE-io4" secondAttribute="trailing" constant="24" id="yyL-2t-e0g"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -162,6 +175,9 @@
         <image name="unicorn" width="170.66667175292969" height="170.66667175292969"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

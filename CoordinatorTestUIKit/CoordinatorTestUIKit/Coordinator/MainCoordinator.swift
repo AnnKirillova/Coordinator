@@ -22,6 +22,8 @@ class MainCoordinator: Coordinator{
         let vc = ColorViewController.instantiate()
         vc.coordinator = self
         vc.color = color
+        let viewModel = ColorViewModel()
+        vc.viewModel = viewModel
         navigationController.pushViewController(vc, animated: true)
     }
     
@@ -29,6 +31,12 @@ class MainCoordinator: Coordinator{
         // let chooseColor = ChooseColorCoordinator()
         // chooseColor.start()
         let vc = ChooseColorViewController.instantiate()
+        vc.coordinator = self
+        navigationController.pushViewController(vc, animated: true)
+    }
+    
+    func weather() {
+        let vc = WeatherViewController.instantiate()
         vc.coordinator = self
         navigationController.pushViewController(vc, animated: true)
     }
