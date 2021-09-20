@@ -22,12 +22,15 @@ class WeatherViewController: UIViewController, Storyboarded {
         super.viewDidLoad()
         setupWeather()
     }
+    
     func setupWeather(){
         weather.bind { [weak self]result in
             guard let self = self else {return}
             switch result{
             case .failure(let error):
-                self.showError(with: error.localizedDescription)
+                DispatchQueue.main.async {
+                    self.showError(with: error.localizedDescription)
+                }
             case .success(let weather):
                 DispatchQueue.main.async {
                     self.temp.text = "Temperature: \(weather.main?.temp ?? 0) ℃"
@@ -40,4 +43,8 @@ class WeatherViewController: UIViewController, Storyboarded {
         }
         weather.getWeather()
     }
+    @IBAction func changeAlpha(_ sender: UILongPressGestureRecognizer) {
+        weatherImage.alpha -= 0.1
+    }
+    
 }

@@ -8,7 +8,6 @@
 import Foundation
 
 class WeatherViewModel{
-    weak var weatherViewController: WeatherViewController?
     lazy var weatherManager = WeatherAPIManager()
     
     var getWeatherCallback: ((Result<Weather, Error>) -> ())?
@@ -21,7 +20,6 @@ class WeatherViewModel{
             guard let self = self else {return}
             switch result{
             case .failure(let error):
-                self.weatherViewController?.showError(with: error.localizedDescription)
                 self.getWeatherCallback?(.failure(error))
             case .success(let weather):
                 self.getWeatherCallback?(.success(weather))
